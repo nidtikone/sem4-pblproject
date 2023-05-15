@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url("background.jpg");
+        background-size: cover;
+        color: white;
+    }
+
+    header {
+        height: 100px;
+        border: 3px solid black;
+        background-color: rgb(88, 148, 197);
+        display: block;
+    }
+
+    .htop {
+        font-family: 'Roboto Slab', serif;
+        font-size: 40px;
+        display: inline-block;
+        width: 50px;
+        margin: 5px 500px;
+    }
+
+    .image {
+        /* position: fixed; */
+        width: 96px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        text-decoration: dashed;
+        color: white;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .navbar {
+        display: inline-block;
+        width: 1000px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 5px;
+        font-size: 23px;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        top: 6px;
+        text-align: center;
+    }
+
+    .center {
+        display: block;
+        width: 384px;
+        margin: -11px 60px;
+    }
+
+
+    .section1 {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 450px;
+        ;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+    }
+
+    .reg h2 {
+        font-size: 2em;
+        color: white;
+        text-align: center;
+
+    }
+    input{
+        display: block;
+    }
+    select{
+        display: block;
+    }
+    .bt {
+        border: 1px solid rgb(0, 44, 240);
+        background-color: rgb(97, 138, 199);
+        color: white;
+        padding: 4px 4px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .bt:hover{
+        background-color: rgb(169, 224, 231);
+        color:rgb(30, 135, 221) ;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="htop">
+            <a href="Landing Page.html">Streamline</a>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="Landing Page.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="left">
+            <a href="Landing Page.html"><img class="image" src="logo.png"></a>
+        </div>
+    </header>
+
+    <section class="section1">
+        <div class="reg">
+            <form action="#">
+                <h2>Registration</h2>
+                Name:<input type="text" required>
+                Age:<input type="number" required>
+                Institute:<input type="text" required>
+                E-mail:<input type="email" required>
+                Password:<input type="password" required>
+                Confirm Password:<input type="password" required>
+                <label for="Security Question:">Security Question:</label>
+                <select>
+                    <option value="Petname">What is your Pet name?</option>
+                    <option value="City">In which City did you grow up in?</option>
+                    <option value="School">In which school did you study?</option>
+                    <option value="friend">What is the name of your friend?</option>
+                </select>
+                <input type="text" required>
+                <button type="Submit" class="bt"><a href="Landing Page.html">Submit</a></button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
